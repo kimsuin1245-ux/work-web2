@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FITWORK</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="app"><aside><div class="logo">FIT<i>WORK</i></div><nav id="nav"></nav></aside>
+<div class="main"><div class="top"><select aria-label="프로젝트"><option>앱 리뉴얼 프로젝트</option><option>브랜드 캠페인</option></select><button class="btn a" id="tmchip" data-a="go" data-v="workspace" hidden></button><div class="sp"></div><button class="bell" id="bell" data-a="go" data-v="match" aria-label="알림">🔔</button><div class="av">하</div></div><div id="main"></div></div></div>
+<dialog id="dlg"><h3>업무 기록하기</h3>
+<label>업무 이름</label><input id="f_t" placeholder="예: 온보딩 화면 디자인">
+<label>업무 종류</label><select id="f_k" class="f"><option>디자인</option><option>리서치</option><option>문서화</option><option>발표</option></select>
+<label>예상 시간 (h)</label><input id="f_e" type="number" min="0" value="4">
+<label>진행 상태</label><select id="f_s" class="f"><option value="todo">진행 전</option><option value="doing">진행 중</option><option value="done">완료</option></select>
+<label>실제 소요 시간 (h, 완료 시)</label><input id="f_a" type="number" min="0" value="0">
+<label>수정 횟수 (완료 시)</label><input id="f_r" type="number" min="0" value="0">
+<div class="acts" style="justify-content:flex-end"><button class="btn" data-a="close">취소</button><button class="btn p" data-a="add">저장</button></div></dialog>
+<div id="toast"></div>
+<script src="script.js"></script></body></html>
